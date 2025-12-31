@@ -49,10 +49,10 @@ The task table (`tasks_task`) is created using a raw SQL script.
 
 Steps to set up the database:
 
-1. Run Django migrations for internal tables (sessions, auth, etc.)
+1. Run Django migrations for internal tables (sessions, auth, etc.):
    python manage.py migrate
 
-2. Create the tasks table using the provided SQL script
+2. Create the tasks table using the provided SQL script:
    python todo_list_project/setup_database.py
 
 ## API Documentation
