@@ -57,7 +57,7 @@ Steps to set up the database:
 
 ## API Documentation
 
-# GET /api/tasks/
+### GET /api/tasks/
 
 Response(200 OK):
 [
@@ -70,7 +70,7 @@ Response(200 OK):
 }
 ]
 
-# POST /api/tasks/
+### POST /api/tasks/
 
 Request Body:
 {
@@ -85,7 +85,7 @@ Response(201 Created):
 "message": "Task created"
 }
 
-# PUT /api/tasks/<id>/
+### PUT /api/tasks/<id>/
 
 Request Body:
 {
@@ -105,7 +105,7 @@ Response(404 Not Found):
 "error": "Task not found"
 }
 
-# DELETE /api/tasks/<id>/
+### DELETE /api/tasks/<id>/
 
 Response(204 No Content):
 {
