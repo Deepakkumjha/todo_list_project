@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="{% static 'tasks/css/tasks.css' %}" />
+  </head>
+
+  <body>
+    <h1>To-Do List</h1>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="task-body"></tbody>
+    </table>
+    <br />
+    <br />
+    <hr />
+    <h1>Create Task</h1>
+
+    <div id="create-task-box">
+      <form id="create-task-form">
+        <div class="form-row">
+          <label for="title">Title :</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+
+        <div class="form-row">
+          <label for="description">Description :</label>
+          <textarea name="description" id="description"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="due_date">Due Date :</label>
+          <input id="due_date" type="date" name="due_date" min="{{ today }}" />
+        </div>
+
+        <button id="create-button" type="submit">Create</button>
+      </form>
+    </div>
+
+    <script src="{% static 'tasks/js/tasks.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(44, 43, 43) !important;
+    color: white
+}
+
+h1{
+    text-align: center !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #e5e0e0;
+    padding: 10px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#create-task{
+    margin-left: 150px;
+    display: flex;
+    gap: 100px;
+}
+
+#create-button{
+    background-color: blue;
+    color: white;
+    margin: 20px 0px 0px 150px;
+    width: 80px;
+}
+
+#delete-button{
+    background-color: red;
+    color: white;
+    width: 100px;
+}
+
+.done{
+    background-color: greenyellow;
+}
+
+.pending{
+    background-color: rgb(236, 87, 87);
+}
+
+#create-task,
+#create-task-form {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.form-row label {
+    width: 120px;
+    font-weight: 600;
+    color: white;
+}
+
+#create-task input,
+#create-task textarea {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#create-task textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+
+#create-task button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#create-task-box{
+    padding: 30px;
+    margin: 30px 0px 0px 485px;
+    border: 1px solid;
+    width: 400px;
+}
+
+#title{
+    height: 25px;
+}
+
+#description{
+    height: 50px;
+}
+
+#due_date{
+    height: 25px;
+}
