@@ -24,7 +24,7 @@ This is a To-Do List web application built using Python and Django. The applicat
 ## Setup Instructions
 
 1. Download the project or clone the repository:
-   https://github.com/Deepakkumjha/todo_list_project.git
+   git clone https://github.com/Deepakkumjha/todo_list_project.git
 
    Navigate to the project directory:
    cd todo_list_project

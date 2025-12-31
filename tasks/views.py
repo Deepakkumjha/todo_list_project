@@ -46,7 +46,7 @@ def task_list_create(request):
                     {"error": "Task already exists"},
                     status=status.HTTP_400_BAD_REQUEST
                 )
-            execute_select("""
+            execute_query("""
                     INSERT INTO tasks_task (title, description, due_date, status)
                     VALUES (%s, %s, %s, %s)
                     """,
