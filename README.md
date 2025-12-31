@@ -85,7 +85,7 @@ Response(201 Created):
 "message": "Task created"
 }
 
-### PUT /api/tasks/<id>/
+### PUT /api/tasks/{id}/
 
 Request Body:
 {
@@ -105,7 +105,7 @@ Response(404 Not Found):
 "error": "Task not found"
 }
 
-### DELETE /api/tasks/<id>/
+### DELETE /api/tasks/{id}/
 
 Response(204 No Content):
 {
